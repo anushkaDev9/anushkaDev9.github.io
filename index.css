@@ -1,0 +1,339 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+.home {
+  background-color: black;
+  height: 49rem;
+  font-family: "Ubuntu", sans-serif;
+  margin-top: -3.5%;
+}
+
+.circle {
+  background-image: linear-gradient(to right, #c197d2 1%, black 80%);
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.top-circle {
+  background-image: linear-gradient(to right, #c197d2 1%, black 50%);
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+  margin-top: -13%;
+  z-index: 3;
+  margin-left: 8%;
+}
+.moon {
+  background-image: linear-gradient(to right, #c197d2 0.2%, black 50%);
+  width: 300px;
+  height: 300px;
+  border-radius: 300px;
+  margin-left: 76%;
+  margin-top: -17%;
+
+  transform: rotate(-20deg);
+}
+.home h1,
+.home p {
+  color: #dcbfe8;
+}
+.home img {
+  width: 60%;
+  margin-left: -15%;
+}
+.header {
+  margin-top: -3%;
+}
+.header .name-header p,
+h1 {
+  margin-left: 35%;
+}
+.name-header {
+}
+.name-header p {
+  font-size: 20px;
+}
+.name-header p:nth-child(1) {
+  margin-top: 5%;
+}
+.name-header h1 {
+  font-size: 60px;
+  margin-top: -2%;
+}
+.name-header .bottom-header {
+  margin-top: -2%;
+}
+.meteor {
+  position: absolute;
+  left: 400px;
+  height: 10px;
+  width: 55px;
+  top: 40%;
+  background: linear-gradient(to right, transparent, white);
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  animation: meteor 15s infinite;
+  color: black;
+}
+.meteor:nth-child(1) {
+  left: 300px;
+}
+.meteor:nth-child(2) {
+  left: 90%;
+  background-color: red;
+  transform: rotate(-30deg);
+}
+
+@keyframes meteor {
+  0% {
+    transform: rotate(30deg) translate(-200%, -200%);
+  }
+  30% {
+    opacity: 0;
+    transform: rotate(30deg) translate(100%, 100%);
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(30deg) translate(100%, 100%);
+  }
+}
+.navBar {
+  margin-top: -15%;
+  position: fixed;
+  width: 30%;
+  border-radius: 15px;
+  height: 2rem;
+  margin-left: 35%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.navBar ul {
+  list-style-type: none;
+  margin-left: 3%;
+}
+.navBar ul li {
+  float: left;
+  padding-left: 7%;
+}
+.navBar ul li a {
+  color: white;
+  text-decoration: none;
+}
+.navBar-scroll {
+  background: rgb(74, 74, 74);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  z-index: 10;
+  color: whitesmoke;
+}
+.profile-pic {
+  border-right: 2px solid black;
+}
+.skills-list {
+  width: 70%;
+  display: grid;
+  gap: 2px;
+  row-gap: 50px;
+  grid-template-columns: repeat(4, auto);
+  background-color: red;
+}
+.div-skill {
+  background-color: white;
+  width: 80%;
+}
+.progress {
+  width: 60%;
+  height: 4rem;
+}
+.experience {
+  font-family: "Ubuntu", sans-serif;
+}
+h2 {
+  font-size: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 6%;
+}
+
+.experience-grid {
+  font-size: 20px;
+  margin-bottom: 7%;
+}
+.experience h2 {
+  font-size: 50px;
+  text-align: center;
+  color: black;
+}
+.edu-list p {
+  font-size: 20px;
+}
+.education {
+  margin-top: 7%;
+  display: grid;
+  width: 85%;
+
+  margin-left: 7%;
+  grid-template-columns: auto auto;
+}
+.about {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+
+
+.profile-img {
+  margin-top: 5%;
+  z-index: 1;
+  margin-left: 10%;
+  height: 20rem;
+  border-radius: 10px;
+}
+.navBar {
+}
+.about {
+  height: 25rem;
+}
+.about-text {
+  font-family: "Ubuntu", sans-serif;
+  height: 4rem;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 5%;
+}
+
+.about-text p {
+  font-size: 20px;
+}
+.about h2 {
+  font-size: 35px;
+}
+.profile-div {
+}
+.profile-div ul {
+  margin-top: 9%;
+  margin-left: 9%;
+}
+.profile-div ul li {
+  float: left;
+  list-style-type: none;
+  padding-left: 5%;
+}
+.profile-div a {
+  color: black;
+}
+.experience {
+  width: 85%;
+  margin-left: 11%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px;
+  margin-top: 7%;
+}
+.education .edu-list {
+  display: flex;
+  margin-left: 5%;
+}
+.edu-list p {
+  margin-left: 5%;
+}
+.icon-edu {
+  margin-left: 5%;
+}
+.contact {
+  background-color: black;
+  height: 19rem;
+  position: absolute;
+  margin-top: 13%;
+}
+.contact-div {
+  background-color: white;
+  width: 30%;
+  margin-top: -12%;
+  height: 27rem;
+  margin-left: 37%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.contact-div h3 {
+  padding-top: 5%;
+  font-size: 30px;
+  padding-left: 25%;
+}
+.input-name,
+.input-email,
+.input-message {
+  width: 70%;
+  border-bottom: 2px solid black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-left: 15%;
+}
+.input-name {
+  margin-top: 5%;
+  height: 2rem;
+}
+.input-email {
+  margin-top: 5%;
+}
+.input-message {
+  height: 7rem;
+  margin-top: 4%;
+}
+.btn-send {
+  margin: 9%;
+  width: 50%;
+  margin-left: 25%;
+  background-color: black;
+  height: 2.5rem;
+  color: white;
+}
+@media (max-width: 560px) {
+  .contact {
+    margin-top: 70%;
+    height: 27rem;
+  }
+  .contact-div {
+    margin-top: -55%;
+    width: 75%;
+    margin-left: 13%;
+  }
+  .about{
+    display: flex;
+    flex-direction: row;
+  }
+  .experience {
+    margin-left: 2%;
+    width: 90%;
+  }
+  .experience-grid {
+    gap: 30px;
+  }
+  .education {
+    display: flex;
+    flex-direction: column;
+  }
+  .circle {
+    display: none;
+  }
+  .top-circle {
+    display: none;
+  }
+  .moon {
+    display: none;
+  }
+  .about {
+    display: grid;
+  }
+  .home {
+  }
+}
