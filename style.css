@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+html,body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  height:100%;
+}
+.app{
+  height:100%;
+  background-image: linear-gradient(to right top, #d16ba5, #da6a9e, #e26b97, #e96b8f, #ef6d87, #f47974, #f38963, #eb9a58, #d0ba5b, #acd57e, #82ebb4, #5ffbf1);
+background-size: 300% 300%;
+-webkit-animation: Gradient 30s ease infinite;
+-moz-animation: Gradient 30s ease infinite;
+animation: Gradient 30s ease infinite;
+}
+@-webkit-keyframes Gradient {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@-moz-keyframes Gradient {
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+@keyframes Gradient { 
+    0%{background-position:81% 0%}
+    50%{background-position:20% 100%}
+    100%{background-position:81% 0%}
+}
+
+.sideDrawer{
+  height:90%;
+  width:200px;
+  max-width:30%;
+  border-radius:0 40% 40% 0;
+  background-color:#333745;
+  position:fixed;
+  top:20px;
+  bottom:20px;
+  box-shadow:5px 0 5px black;
+  transform:translateX(-80%);
+  transition:transform .2s ease-in;
+  z-index:100;
+}
+.sideDrawer:hover{
+  transform:translateX(0px);
+  box-shadow:5px 0 10px 0px black;
+}
+.menu{
+  height:inherit;
+}
+.menu ul{
+  display:flex;
+  height:90%;
+  flex-direction:column;
+  list-style-type:none;
+  align-items:lett;
+  justify-content:space-evenly;
+  font-family:'Stylish';
+  font-size:1.5em;
+  color:rgba(240,240,240,0.9);
+  transition:transform,color 0.2s ease-in
+}
+
+.menu li:hover{
+  transform:scale(1.1);
+  color:grey;
+  cursor:pointer;
+  width:60%;
+  box-shadow:0 0 5px red;
+}
+
+main{
+  display:flex;
+  height:100%;
+  align-items:center;
+  justify-content:space-around;
+}
+
+.hello{
+  font-family:'Roboto';
+  font-size:3em;
+  color:#800080;
+  opacity:.1;
+  transition:opacity .4s ease-in,
+    color .4s ease-in;
+  animation-name:textColor;
+  animation-duration:10s;
+  animation-fill-mode:forwards;
+  animation-iteration-count:infinite;
+  animation-timing-function:ease-in;
+}
+
+@keyframes textColor{
+  0%{
+    opacity:.4;
+    color:white;
+  }
+  25%{
+    opacity:.3;
+    color:blue;
+  }
+  50%{
+    opacity:.7;
+    color:red;
+  }
+  75%{
+    opacity:1;
+    color:green;
+  }
+  100%{
+    opacity:.4;
+    color:white;
+  }
+}
+

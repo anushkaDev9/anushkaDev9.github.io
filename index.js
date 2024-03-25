@@ -1,25 +1,23 @@
 var sideDrawer = document.createElement("div");
 sideDrawer.classList.add("sideDrawer");
 
-sideDrawer.style.display = "none";
 document.body.appendChild(sideDrawer);
 let navList = document.getElementById("navBar");
-//navList.style.display = "none";
-let navBarDiv = false;
+navList.style.display = "none";
 
+sideDrawer.appendChild(navList);
+sideDrawer.style.width = 0;
 function navBar() {
-    console.log(navBarDiv)
- sideDrawer.appendChild(navList);
-    navList.style.display = "block";
-    sideDrawer.style.display = "block";
+   sideDrawer.style.width='20%'
+ navList.style.display = "block";
+    
   
 
-  navBarDiv = true;
+  
 }
 
-function close() {
-  console.log(navBarDiv);
-  alert("jko");
-  if (navBarDiv === true) {
-  }
+function closeBar() {
+  sideDrawer.style.width = "0%";
+   navList.style.display = "none";
 }
+
